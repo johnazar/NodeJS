@@ -1,9 +1,10 @@
+// Import module
 const logger = require ('./logger');
 
 
 function sayHello(name)
 {
-    logger.log('message');
+    logger.logtocloud(name);
 
     console.log('Hello ' + name);
 
