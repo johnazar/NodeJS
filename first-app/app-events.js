@@ -1,11 +1,12 @@
-const EventEmitter = require('events');
-const emitter = new EventEmitter();
+
+// Import log module
+const Logger = require ('./log_module');
+const logger = new Logger();
 
 //Register a listener
-emitter.on('messageLogged',(arg)=>{ // arg OR e , as you like
-    console.log('Listener called ', arg);
+logger.on('messageLogged',(arg)=>{ // arg OR e , as you like
+    console.log('Listener called ', arg.data);
 });
-//Rise an event
-emitter.emit('messageLogged',{id:1,url:'http://'});
-//Rise an event
+
+logger.log('Message to log');
 
