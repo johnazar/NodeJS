@@ -26,7 +26,7 @@ const platSpec = path.delimiter;
 console.log(platSpec);
 
 
-// ge the path format on POSIX : / and Windows : \
+// get the path format on POSIX : / and Windows : \
 // more info : https://nodejs.org/dist/latest-v11.x/docs/api/path.html#path_path_format_pathobject
 const pathformat = path.format({
   dir: pathjoin,

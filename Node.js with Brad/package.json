@@ -4,14 +4,15 @@
   "description": "Node crash course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "nodemon index"
   },
-  "author": "John Azar",
-  "license": "MIT",
+  "author": "Brad Traversy",
+  "license": "ISC",
   "dependencies": {
-    "uuid": "^8.3.1"
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^1.18.9"
   }
 }
