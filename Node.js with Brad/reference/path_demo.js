@@ -29,11 +29,9 @@ console.log(platSpec);
 // get the path format on POSIX : / and Windows : \
 // more info : https://nodejs.org/dist/latest-v11.x/docs/api/path.html#path_path_format_pathobject
 const pathformat = path.format({
-  dir: pathjoin,
-  root: pathjoin,
-  base: pathjoin,
-  name: pathjoin,
-  ext: pathjoin,
+  root: '/',
+  name: 'file',
+  ext: '.txt'
 });
 
 console.log(pathformat);
